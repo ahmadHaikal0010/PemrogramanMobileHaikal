@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MobileAppMI2A"
         tools:targetApi="31">
         <activity
+            android:name=".PageTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PageRelativeActivity"
+            android:exported="false" />
+        <activity
             android:name=".PageAdminActivity"
             android:exported="false" />
         <activity
