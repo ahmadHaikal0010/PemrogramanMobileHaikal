@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MobileAppMI2A"
         tools:targetApi="31">
         <activity
+            android:name=".PageLatihan4Activity"
+            android:exported="false" />
+        <activity
             android:name=".ContrainsLayoutActivity"
             android:exported="false" />
         <activity
