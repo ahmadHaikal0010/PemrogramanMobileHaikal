@@ -36,5 +36,23 @@
             android:layout_marginRight="10sp"
             android:padding="15sp"
             android:text="Click Here" />
+
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="10sp"
+            android:text="Next Page" />
+
+        <Button
+            android:id="@+id/btnLatihan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="10sp"
+            android:text="Latihan 2" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
