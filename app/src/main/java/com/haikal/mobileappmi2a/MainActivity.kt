@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnClick : Button
     private lateinit var btnNextPage : Button
     private lateinit var btnLatihan2 : Button
-    private lateinit var btnLatihan4 : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         btnClick = findViewById(R.id.btnClickHere)
         btnNextPage = findViewById(R.id.btnNextPage)
         btnLatihan2 = findViewById(R.id.btnLatihan2)
-        btnLatihan4 = findViewById(R.id.btnLatihan4)
 
         // untuk 1 screen terdiri dari 1 main activity dan 1 file xml layout
         // untuk widget yang dipakai, harus dideklarasi dahulu
@@ -52,11 +50,6 @@ class MainActivity : AppCompatActivity() {
         btnLatihan2.setOnClickListener() {
             val intentMenu3 = Intent(this@MainActivity, PageLatihan2Activity::class.java)
             startActivity(intentMenu3)
-        }
-
-        btnLatihan4.setOnClickListener() {
-            val intentMenu4 = Intent(this@MainActivity, PageLatihan4Activity::class.java)
-            startActivity(intentMenu4)
         }
     }
 }

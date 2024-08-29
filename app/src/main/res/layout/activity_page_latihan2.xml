@@ -16,11 +16,11 @@
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="100sp"
-            android:layout_marginRight="40sp"
-            android:ems="10"
-            android:inputType="text" />
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="100sp"
+                android:layout_marginRight="40sp"
+                android:ems="10"
+                android:inputType="text" />
 
         <EditText
             android:id="@+id/etPassword"
