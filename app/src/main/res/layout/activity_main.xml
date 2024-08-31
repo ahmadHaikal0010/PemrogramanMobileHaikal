@@ -56,5 +56,14 @@
             android:layout_marginRight="10sp"
             android:text="Latihan 2" />
 
+        <Button
+            android:id="@+id/btnKalkulatorSederhana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Sederhana"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="10sp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
