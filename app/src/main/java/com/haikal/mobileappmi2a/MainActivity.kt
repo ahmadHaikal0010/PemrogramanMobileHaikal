@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnNextPage : Button
     private lateinit var btnLatihan2 : Button
     private lateinit var btnKalkulatorSederhana : Button
+    private lateinit var btnPassingData : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         btnNextPage = findViewById(R.id.btnNextPage)
         btnLatihan2 = findViewById(R.id.btnLatihan2)
         btnKalkulatorSederhana = findViewById(R.id.btnKalkulatorSederhana)
+        btnPassingData = findViewById(R.id.btnPassingData)
 
         // untuk 1 screen terdiri dari 1 main activity dan 1 file xml layout
         // untuk widget yang dipakai, harus dideklarasi dahulu
@@ -57,6 +59,11 @@ class MainActivity : AppCompatActivity() {
         btnKalkulatorSederhana.setOnClickListener() {
             val intentMenu4 = Intent(this@MainActivity, KalkulatorSederhanaActivity::class.java)
             startActivity(intentMenu4)
+        }
+
+        btnPassingData.setOnClickListener() {
+            val intentMenu5 = Intent(this@MainActivity, LoginActivity::class.java)
+            startActivity(intentMenu5)
         }
     }
 }
