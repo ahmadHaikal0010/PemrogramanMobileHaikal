@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MobileAppMI2A"
         tools:targetApi="31">
         <activity
+            android:name=".RecycleBuahActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecycleViewActivity"
             android:exported="false" />
         <activity
