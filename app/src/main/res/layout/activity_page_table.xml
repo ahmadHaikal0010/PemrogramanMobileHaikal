@@ -7,60 +7,75 @@
     android:layout_height="match_parent"
     tools:context=".PageTableActivity">
 
+
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
 
         <TableRow
-            android:padding="3dp">
+            android:background="#22ff">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="20dp"
-                android:text="Open ..."/>
+                android:layout_column="1"
+                android:text="Open..."
+                android:padding="3dp"/>
+
+            <TextView
+                android:text="CTRL + O"
+                android:gravity="right"
+                android:padding="3dp"/>
 
         </TableRow>
 
         <TableRow
-            android:padding="3dp">
+            android:background="#22ff">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="20dp"
-                android:text="Save ..."/>
+                android:layout_column="1"
+                android:text="Save..."
+                android:padding="3dp"/>
+
+            <TextView
+                android:text="CTRL + S"
+                android:gravity="right"
+                android:padding="3dp"/>
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090"/>
+
+        <TableRow
+            android:background="#FFF000">
+
+            <TextView
+                android:layout_column="1"
+                android:text="Exit"
+                android:padding="3dp"/>
+
+            <TextView
+                android:text="CTRL + X"
+                android:gravity="right"
+                android:padding="3dp"/>
 
         </TableRow>
 
         <TableRow
-            android:background="#FFF000"
-            android:padding="3dp">
+            android:background="#FFF000">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="20dp"
-                android:text="Exit"/>
-
-        </TableRow>
-
-        <TableRow
-            android:background="#FFF000"
-            android:padding="3dp">
+                android:layout_column="1"
+                android:text="Quit"
+                android:padding="3dp"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="20dp"
-                android:text="Quit"/>
+                android:text="CTRL + Q"
+                android:gravity="right"
+                android:padding="3dp"/>
 
         </TableRow>
 
     </TableLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,39 +10,38 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp">
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Reminder" />
+            android:hint="Reminder"/>
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:text="LEFT"
-            android:layout_below="@id/name" />
+            android:layout_below="@+id/name"
+            android:layout_alignParentLeft="true"/>
 
         <Button
-            android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/btn2"
             android:text="RIGHT"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/name"/>
+            android:layout_below="@+id/name"
+            android:layout_alignParentRight="true"/>
 
         <Button
-            android:id="@+id/btn3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button Bottom"
-            android:layout_below="@id/btn2"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp" />
+            android:id="@+id/btn3"
+            android:text="BUTTON BOTTOM"
+            android:layout_below="@+id/btn2"
+            android:layout_marginLeft="100dp"/>
 
     </RelativeLayout>
 

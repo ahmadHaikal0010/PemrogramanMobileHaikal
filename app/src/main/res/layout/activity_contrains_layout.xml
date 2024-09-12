@@ -8,10 +8,16 @@
     tools:context=".ContrainsLayoutActivity">
 
     <TextView
-        android:id="@+id/txtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ini adalah Text untuk Layout Contraints"
+        android:id="@+id/textVIew"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Ini adalah teks untuk layout contrains"
         android:textAlignment="center"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -23,11 +29,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="ini adalah tombol"
+        android:text="Ini adalah tombol"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtView"/>
+        app:layout_constraintTop_toBottomOf="@+id/textVIew"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

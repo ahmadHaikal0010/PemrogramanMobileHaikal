@@ -16,13 +16,14 @@
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
-            android:background="@color/material_dynamic_neutral0" />
+            android:background="@color/material_dynamic_neutral10"/>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300px"
+            android:layout_height="100px"
             android:layout_gravity="center"
-            android:text="ini button"/>
+            android:text="Ini button tengah"
+            android:textColor="@color/cardview_light_background"/>
 
     </FrameLayout>
 
