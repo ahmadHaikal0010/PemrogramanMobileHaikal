@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TekomActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:text="Teknik Komputer"
+            android:textAlignment="center"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="10sp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Deskripsi"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="20dp"
+            android:text="PS D3 TKOM  dipimpin oleh seorang koordinator yang dipilih dalam rapat pemilihan koordinator prodi. Pemilihan Koordinator PS D3 TKOM  mengacu pada Peraturan Menteri Pendidikan dan Kebudayaan Republik Indonesia Nomor 89 Tahun 2014 tentang Statuta Politeknik Negeri Padang. Dalam Statuta dijelaskan bahwa Ketua Jurusan mengusulkan tiga calon Koordinator PS D3 TKOM  untuk selanjutnya dipilih oleh para dosen dalam rapat pemilihan koordinator prodi. Selain diatur di dalam Statuta PNP, tata cara pemilihan Koordinator program studi juga mengacu pada Peraturan Direktur PNP No. 0285/PL9/KP/2015 tentang Tata Cara Pengangkatan dan Pemberhentian Koordinator Prodi PNP. Koordinator terpilih akan dilantik oleh Direktur PNP untuk masa jabatan dua tahun.  Koordinator PS D3 TKOM  memiliki tanggung jawab dalam pengelolaan pelaksanaan kegiatan Proses Belajar  Mengajar  (PBM)  program studi. Dalam melaksanakan tugas, koordinator Prodi dibantu oleh seorang yang bertugas di bidang administrasi dan berkoordinasi dengan Labor Komputer. Labor tersebut digunakan sebagai tempat praktik mahasiswa di bidang kurikulum yang sudah ditetapkan terutama untuk  praktek yang disesuaikan dengan profil lulusan di program studi PS D3 TKOM . Pembagian tugas dan tanggung jawab dalam tata pamong PS D3 TKOM  tersebut mengacu pada Peraturan Direktur dan diuraikan dalam Buku Uraian Jabatan Politeknik Negeri Padang Tahun 2021."
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/btnBack2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginLeft="72sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="72sp"
+            android:backgroundTint="#FF9800"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

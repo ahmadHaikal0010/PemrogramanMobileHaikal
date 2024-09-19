@@ -8,7 +8,7 @@ data class ModelBuah(
 )
 
 // kita mock data untuk array
-object Mocklist {
+object Mocklist1 {
     fun getModel() : List<ModelBuah> {
         val itemModel1 = ModelBuah(
             R.drawable.apple,

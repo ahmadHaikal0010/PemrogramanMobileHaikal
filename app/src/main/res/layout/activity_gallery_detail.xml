@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:text="Detail Image"
+            android:textAlignment="center"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="10sp"/>
+
+        <!-- ImageView to display full-sized image -->
+        <ImageView
+            android:id="@+id/fullscreen_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Full-sized image"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Button to go back -->
+        <Button
+            android:id="@+id/btnBack2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginLeft="72sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="72sp"
+            android:backgroundTint="#FF9800"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

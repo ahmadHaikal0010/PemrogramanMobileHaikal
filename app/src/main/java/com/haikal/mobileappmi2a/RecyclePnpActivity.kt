@@ -7,25 +7,24 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.haikal.mobileappmi2a.adapter.BuahAdapter
+import com.haikal.mobileappmi2a.adapter.PnpAdapter
 import com.haikal.mobileappmi2a.model.Mocklist
-import com.haikal.mobileappmi2a.model.Mocklist1
-import com.haikal.mobileappmi2a.model.ModelBuah
+import com.haikal.mobileappmi2a.model.ModelPnp
 
-class RecycleBuahActivity : AppCompatActivity() {
+class RecyclePnpActivity : AppCompatActivity() {
 
-    private lateinit var rv_buah : RecyclerView
+    private lateinit var rv_pnp : RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_recycle_buah)
+        setContentView(R.layout.activity_recycle_pnp)
 
-        rv_buah = findViewById(R.id.rv_buah)
+        rv_pnp = findViewById(R.id.rv_pnp)
 
-        rv_buah.layoutManager = GridLayoutManager(this, 1)
-        val adapter = BuahAdapter(Mocklist1.getModel() as ArrayList<ModelBuah>)
-        rv_buah.adapter = adapter
+        rv_pnp.layoutManager = GridLayoutManager(this, 1)
+        val adapter = PnpAdapter(Mocklist.getModel() as ArrayList<ModelPnp>, this)
+        rv_pnp.adapter = adapter
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

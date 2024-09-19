@@ -1,31 +1,28 @@
 package com.haikal.mobileappmi2a
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.haikal.mobileappmi2a.adapter.BuahAdapter
-import com.haikal.mobileappmi2a.model.Mocklist
-import com.haikal.mobileappmi2a.model.Mocklist1
-import com.haikal.mobileappmi2a.model.ModelBuah
 
-class RecycleBuahActivity : AppCompatActivity() {
+class MiActivity : AppCompatActivity() {
 
-    private lateinit var rv_buah : RecyclerView
+    private lateinit var btnBack1 : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_recycle_buah)
+        setContentView(R.layout.activity_mi)
 
-        rv_buah = findViewById(R.id.rv_buah)
+        btnBack1 = findViewById(R.id.btnBack1)
 
-        rv_buah.layoutManager = GridLayoutManager(this, 1)
-        val adapter = BuahAdapter(Mocklist1.getModel() as ArrayList<ModelBuah>)
-        rv_buah.adapter = adapter
+        btnBack1.setOnClickListener() {
+            intent = Intent(this@MiActivity, PnpActivity::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

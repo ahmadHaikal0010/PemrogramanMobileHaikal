@@ -13,6 +13,30 @@
         android:theme="@style/Theme.MobileAppMI2A"
         tools:targetApi="31">
         <activity
+            android:name=".GalleryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaleryDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclePnpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".galeryDetails.Pnp1DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaleryPhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TekomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PnpActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecycleBuahActivity"
             android:exported="false" />
         <activity

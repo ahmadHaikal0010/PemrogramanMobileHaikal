@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:text="Manajemen Informatika"
+            android:textAlignment="center"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="10sp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Deskripsi"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Program Studi D3 Manajemen Informatika didirikan pada tahun 2005, dan terakreditasi dengan peringkat B berdasarkan Surat Keputusan Badan Akreditasi nasional Perguruan Tinggi (BAN-PT) Departemen Pendidikan dan kebudayaan republik Indonesia Surat Keputusan Nomor :1196/SK/BAN- PT/Akred/Dpl-III/XII/2015 dengan nilai akreditasi 338.  Arah kajian keilmuan dari program studi ini mencakup disiplin, proses, teknik dan alat bantu yang dibutuhkan dalam rekayasa perangkat lunak yang meliputi tahap perencanaan, pembangunan dan implementasi. Program studi D3 Manajemen Informatika yang merupakan kesatuan rencana belajar yang mengkaji, menerapkan, dan mengembangkan ilmu manajemen informatika yang melandasi rancang bangun sebuah sistem maupun aplikasi yang berdasarkan sistem informasi."
+            android:textAlignment="textStart"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnBack1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginLeft="72sp"
+            android:layout_marginTop="128sp"
+            android:layout_marginRight="72sp"
+            android:backgroundTint="#FF9800"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
