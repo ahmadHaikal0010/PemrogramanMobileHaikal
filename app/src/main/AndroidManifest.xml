@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MobileAppMI2A"
         tools:targetApi="31">
         <activity
+            android:name=".DetailBuah"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleWisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WisataSplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WisataActivity"
+            android:exported="false" />
+        <activity
             android:name=".GalleryDetailActivity"
             android:exported="false" />
         <activity

@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnRecycleView : Button
     private lateinit var btnRecycleBuah : Button
     private lateinit var btnPnp : Button
+    private lateinit var btnWisata : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,12 +35,13 @@ class MainActivity : AppCompatActivity() {
         btnRecycleView = findViewById(R.id.btnRecycleView)
         btnRecycleBuah = findViewById(R.id.btnRecycleBuah)
         btnPnp = findViewById(R.id.btnPnp)
+        btnWisata = findViewById(R.id.btnWisata)
 
         // untuk 1 screen terdiri dari 1 main activity dan 1 file xml layout
         // untuk widget yang dipakai, harus dideklarasi dahulu
         // kita deklarasi findviewby id
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.rv_wisata)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets

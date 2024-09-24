@@ -2,13 +2,36 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/rv_wisata"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RecycleBuahActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_buah"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_buah"
+            android:layout_width="match_parent"
+            android:layout_height="150sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Buah"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:background="#03A9F4"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_buah2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
