@@ -15,7 +15,7 @@ import com.haikal.mobileappmi2a.model.ModelBuah
 
 class BuahAdapter (
         val itemList: ArrayList<ModelBuah>,
-        val getActivity : RecycleBuahActivity // untuk intent replace context, this
+        val getActivity: RecycleBuahActivity // untuk intent replace context, this
     ) : RecyclerView.Adapter<BuahAdapter.MyViewHolder>() {
 
     class MyViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
