@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WisataSplashActivity"
+    tools:ignore="MissingConstraints">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgWisataSplash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kuil_sensoji"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/txtWisataDestinasiSplash"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sensoji Temple"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:id="@+id/txtWisataKet"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="It is Tokyo's oldest temple, and one of its most significant. Formerly associated with the Tendai sect of Buddhism."
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_below="@+id/txtWisataDestinasiSplash"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/txtWisataDetail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/btnSeeDetails"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="See Details"
+            android:layout_below="@+id/txtWisataKet"
+            android:layout_marginTop="200dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

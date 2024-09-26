@@ -110,6 +110,15 @@
             android:text="Politeknik Negeri Padang" />
 
         <Button
+            android:id="@+id/btnWisata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:text="Wisata" />
+
+        <Button
             android:id="@+id/btnMovie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

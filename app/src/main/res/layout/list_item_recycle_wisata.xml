@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgWisata"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tokyo_disney_resort"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView
+            android:id="@+id/txtWisataDestination"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:text="Tokyo Disney Resort"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/txtWisataCity"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:text="Tokyo"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="bottom"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/txtWisataKet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/txtWisataDetail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
