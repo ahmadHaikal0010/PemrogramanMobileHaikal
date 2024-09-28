@@ -16,16 +16,36 @@
             android:id="@+id/imgDetailBuah"
             android:layout_width="match_parent"
             android:layout_height="292dp"
+            android:layout_margin="5dp"
             app:srcCompat="@drawable/apple" />
 
         <TextView
             android:id="@+id/txtDetailBuah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:background="#03A9F4"
             android:text="Nama Buah"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDetailLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Lokasi: Padang"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDetailDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/st_apel"
+            android:textSize="18sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

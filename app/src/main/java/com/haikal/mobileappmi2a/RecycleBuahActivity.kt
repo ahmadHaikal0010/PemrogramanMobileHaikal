@@ -28,7 +28,7 @@ class RecycleBuahActivity : AppCompatActivity() {
         rv_buah.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         rv_buah2.layoutManager = GridLayoutManager(this, 1, GridLayoutManager.VERTICAL, false)
 
-        val adapter = BuahAdapter(Mocklist1.getModel() as ArrayList<ModelBuah>, this)
+        val adapter = BuahAdapter(Mocklist1.getModel(this) as ArrayList<ModelBuah>, this)
 
         rv_buah.adapter = adapter
         rv_buah2.adapter = adapter

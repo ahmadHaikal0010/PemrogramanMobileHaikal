@@ -52,6 +52,9 @@ class BuahAdapter (
             // kita put data untuk kita passed ke detail
             intent.putExtra("image", itemList[position].image)
             intent.putExtra("nama", itemList[position].nama)
+            // tambahkan put extra untuk lokasi dan deskripsi
+            intent.putExtra("lokasi", itemList[position].lokasi)
+            intent.putExtra("deskripsi", itemList[position].deskripsi)
             // passed ke detail
             getActivity.startActivity(intent)
         }
